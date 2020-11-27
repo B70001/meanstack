@@ -13,8 +13,8 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color:black;">
-         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="">></a>
+    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color:black; ">
+        <a class="navbar-brand" href="#"><img src="images/GitHub-Mark.png" width="30px" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,35 +70,57 @@
                 </li>
                 <input type="text"
                     class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus"
-                    data-hotkey="s,/" name="q" value="" placeholder="Search GitHub"
-                    data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off"
-                    aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search GitHub"
-                    data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" spellcheck="false"
-                    autocomplete="off">
+                    placeholder="Search GitHub" style="margin-left: 400px;border: black; background-color: black;">
                 <img src="https://github.githubassets.com/images/search-key-slash.svg" alt=""
                     class="mr-2 header-search-key-slash">
 
-                <a href="/login?return_to=%2Fjoin%3Fsource%3Dlogin" class="HeaderMenu-link no-underline mr-3"
-                    data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/join?source=login&quot;,&quot;user_id&quot;:null}}"
-                    data-hydro-click-hmac="ad91a6b00eb072d6d4ec799c5720d03c70cf158729a7c06703fd289e56568afa"
-                    data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+                <a href="/login?return_to=%2Fjoin%3Fsource%3Dlogin" class="HeaderMenu-link no-underline mr-3">
                     Sign&nbsp;in
                 </a>
     </nav>
 
-    <div class="row" style="margin-top:8%">
+    <div class="row" style="margin-top:5%">
         <div class="col-4"></div>
         <div class="col-4">
             <center>join GitHub </center>
-            <h1   style="text-align: center;"> Create your account</h1>
-            <label for="">username*</label><br>
-            <input type="text" class="form-control"><br>
+            <h1 style="text-align: center;"> Create your account</h1>
+            <div class="form-group">
+            <label for="">username*</label>
+            <input type="text" class="form-control" > </div>
             <label for="">Email Address*</label><br>
             <input type="text" class="form-control"><br>
             <label for="">password*</label><br>
-            <input type="text " class="form-control"><br>
+            <input type="text" class="form-control">
+
+
+           <p  style="font-size: 12px;" > Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.
+           <a href="" style="color: blue; "> Learn more. </a> </p>
+
+
+
+
+
+
+            <label>
+                <h6> Email preferences </h6>
+            </label>
+            <label class="text-normal mt-2 text-gray" style="font-size: 14px;" data-ga-click="Sign up, send email">
+                <input type="checkbox" name="all_emails" id="all_emails" value="true"
+                    data-ga-click="Signup funnel entrance, click, select checkbox marketing opt-in" checked="checked">
+                Send me occasional product updates, announcements, and offers.
+            </label>
+
 
             <button type="button" class="btn btn-lg btn-primary btn-block">Create account</button>
+
+            <p style="font-size: 12px;" >
+                By creating an account, you agree to the
+                <a href="/site/terms" style="color: blue;" target="_blank">Terms of Service</a>.
+                For more information about GitHub's privacy practices, see the
+                <a href="/site/privacy" style="color: blue;" target="_blank">GitHub Privacy Statement</a>.
+                We'll occasionally send you account-related emails.
+            </p>
+
 
         </div>
         <div class="col-4"></div>
