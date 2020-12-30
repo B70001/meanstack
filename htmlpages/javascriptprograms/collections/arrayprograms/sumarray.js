@@ -14,12 +14,12 @@ console.log(tot)
 
 
 
-var items=arr.splice(2,2)
+var items=arr.splice(2,2)//from index 2,two items will remove
 console.log(arr)
 
 
 
-var arr=[1,2,3,4]
+var arr=[1,2,3,4]//avoding numbers(sum)
 var total=0;
 for(let numbers of arr){
     total=total+numbers;

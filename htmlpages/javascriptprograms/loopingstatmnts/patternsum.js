@@ -7,7 +7,7 @@
 
 
 
-var num=7;
+var num=2;
 var i=1;
 var total=0;
 var sum=0;
